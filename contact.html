@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+<title>Planet Podium | Contact us</title>
+<link rel="shortcut icon" href="images/favicon.png"/>
+<!-- Bootstrap -->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css'/>
+<!-- Font Awesome  -->
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<!-- Web Font  -->
+<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+ 
+ 
+   <style>
+      #map-canvas {
+        width: 500px;
+        height: 400px;
+      }
+    </style>
+	<script>
+  function initialize() {
+  var mapCanvas = document.getElementById('map-canvas');
+    var mapOptions = {
+      center: new google.maps.LatLng(53.278670899999990000, -9.010463599999980000),
+      zoom: 16,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    }
+    var map = new google.maps.Map(mapCanvas, mapOptions);
+    var image = 'images/Map_Pointer.png';
+    var myLatLng = new google.maps.LatLng(53.278670899999990000, -9.010463599999980000);
+    var planetPodium = new google.maps.Marker({
+      position: myLatLng,
+      map: map,
+      icon: image
+  });
+   var contentString = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h1 id="firstHeading" class="firstHeading"><img width="40" height="40"  alt="logo" src="images/Map_Pointer.png">Planet Podium</h1>'+
+      '<div id="bodyContent">'+
+      '<p><b>Planet Podium</b>,We would love to hear from you, get in touch with us! ' +
+      'We are based in the Innovation in Business Centre (IiBC) in GMIT Galway '+
+      '<br/>'+	  
+      'Email: info@planetpodium.com Phone: 091-123456'+	 
+      '<br/>'+	 	  
+      'Website: Planet Podium '+
+	  '<a href="https://planetpodium.com" target= "blank" >'+
+	  'https://planetpodium.com'+ 
+	  '</a>'+
+      '</div>'+
+      '</div>';
+
+  var infowindow = new google.maps.InfoWindow({
+      content: contentString
+  });
+google.maps.event.addListener(planetPodium, 'click', function() {
+    infowindow.open(map,planetPodium);
+  });
+  
+ 
+}
+  
+
+   google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+    
+<!-- Custom CSS -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<script src="js/jquery.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="index.html"   ><img width="185" height="60"  alt="Brand" src="PPLogo.png"></a> </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li ><a href="index.html">Home</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li class="active"><a href="contact.html">Contact us</a></li>
+		<li><a href="Shoping_Cart.html">Shopping Cart<span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div id="section_header">
+  <div class="container">
+    <h2><span>Contact</span> us</h2>
+  </div>
+</div>
+<div class="contact">
+  <div class="container">
+    <div class="col-md-6">
+      <h3>Contact info</h3>
+      <p><span>Address:</span> Innovation in Business Centre (IiBC) in GMIT,Dublin Rd, Galway.</p>
+      <p><span>Email:</span> info@planetpodium.com</p>
+      <p><span>Phone:</span> +1 800 123 1234</p>
+	   <div id="map-canvas" class="col-md-6" >
+	 
+</div>
+    </div>
+	
+    <div class="col-md-6">
+      <h3>Get in touch</h3>
+      <form name =" contact-form" method="post" action ="send-mail.php">
+        <div class="form_details">
+          <input type="text" class="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
+          <input type="text" class="text" value="Email Address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email Address';}">
+          <input type="text" class="text" value="Subject" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Subject';}">
+          <textarea value="Message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Message</textarea>
+          <div class="clearfix"> </div>
+          <button class="btn" type="submit">Send Message</button>
+        </div>
+      </form>
+    </div>
+	
+  </div>
+</div>
+<!-- Footer -->
+<div id="footerwrap">
+  <div class="container">   
+    <div class="row">
+      <div class="col-md-12"> <ul >
+		<nav>
+			<ul class="pager">
+  
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About us</a></li>
+				<li class="active"><a href="services.html">Services</a></li>
+				<li><a href="contact.html">Contact us</a></li>
+				<li><a href="FAQ.html">FAQ</a></li>
+				<li><a href="Shoping_Cart.html">Cart</a></li>      
+			</ul>
+		</nav>
+      </div>
+     </div>     
+   </div>
+	<div class="row">
+     
+	   <ul class="list-inline social-buttons">
+          <li><a href="https://twitter.com/PlanetPodium"><i class="fa fa-twitter"></i></a> </li>
+          <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a> </li>
+          <li><a href="https://plus.google.com/+googleplus/posts"><i class="fa fa-google-plus"></i></a> </li>
+          <li><a href="http://ie.linkedin.com/pub/karen-coleman/17/8/870"><i class="fa fa-linkedin"></i></a> </li>
+        </ul>
+		 <div class="col-md-12"> <span class="copyright">Copyright &copy; 2015 Planet Podium. Design by Group Project Team</span> </div>
+  </div>
+</div>
+
+<!-- Bootstrap core JavaScript --> 
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</div>
+
+
+
+
+</body>
+</html>

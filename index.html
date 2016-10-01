@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" >
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Planet Podium</title>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<!-- Bootstrap -->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css'/>
+
+<!-- Font Awesome  -->
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<!-- Web Font  -->
+<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+<!-- Custom CSS -->
+
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.shop.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+ 
+<script>
+
+$(document).ready(function(){
+    $("#hide").ready(function(){	
+        $("#hide").delay(4000).fadeOut(5000);		
+    });   
+});
+
+</script>
+<script>
+$(document).ready(function(){
+    $("#hIT").ready(function(){	
+        $("#hIT").hide(100).delay(7000).show(2000);		
+    });   
+});
+</script>
+<script>
+$(document).ready(function(){
+    $("#cap").ready(function(){	
+        $("#cap").hide(100).delay(7000).show(2000);		
+    });   
+});
+</script>
+<script>
+ 
+$(function(){
+ 
+	$(document).on( 'scroll', function(){
+ 
+		if ($(window).scrollTop() > 100) {
+			$('.scroll-top-wrapper').addClass('show');
+		} else {
+			$('.scroll-top-wrapper').removeClass('show');
+		}
+	});
+});
+</script>
+
+</head>
+
+<body>
+<div id="site">
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="index.html"   ><img width="185" height="60"  alt="Brand" src="PPLogo.png"></a> </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+		<li><a href="Shoping_Cart.html">Shopping Cart<span class="glyphicon glyphicon-shopping-cart"></span></a></li>		
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Slider -->
+<div class="header-banner"> 
+  <script src="js/responsiveslides.min.js"></script> 
+  <script>
+			 $(function () {
+			  $("#slider").responsiveSlides({
+				auto: true,
+				nav: true,
+				timeout: 7000,
+				speed: 500,
+				namespace: "callbacks",
+				pager: true,
+				
+			  });
+			 });
+			 </script>
+
+  <div class="container">
+    <div class="slider">
+      <div class="callbacks_container">
+        <ul class="rslides" id="slider">
+          <li ><div id="hide"><video id="hide"  autoplay>
+					<source src="PPWELCOMEINRO.mp4" type="video/mp4">
+ 
+Your browser does not support the video tag.
+				</video></div>
+				
+						<img id="hIT" src="images/Main_Pic.png" alt="">
+						
+					<div id="cap" class="caption">
+				<h1>Professional Solutions<span>.</span></h1>
+              <p><b>Whether you are hosting a conference or seminar, we have the Solution.</b></p>
+              <a href="#main-services" class="btn">Packages Available</a> </div>
+          </li>
+          <li> <img src="images/pic 2.png" alt="">
+            <div class="caption">
+              <h1>Customized Solutions<span>.</span></h1>
+              <p> <b>Our conference and events team are on hand to answer all questions and will be available on the day of your event.</b></p>
+              <a href="#main-services" class="btn">More Info</a> </div>
+          </li>
+          <li> <img src="images/tele_conf.png" alt="">
+            <div class="caption">
+              <h1>Creative Solutions<span>.</span></h1>
+              <p><b>Multiparty HD quality audio and video content sharing, Accessible via modern mobile and web clients,Social and integrated design.</b></p>
+              <a href="services.html" class="btn">More Info</a> </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Welcome Section -->
+
+<div id="section_header">
+  <h2><span>Welcome </span>To Planet Podium </h2>
+</div>
+<div id="welcome">
+  <div class="container">
+    <div class="col-md-6"> <img class="img-responsive" src="images/about1.jpg" align=""> </div>
+    <div class="col-md-6">
+      <h3 id="about">About us</h3>
+      Our team is made up of accomplished television and radio broadcasters who can chair conferences on a range of topics from current affairs and business to EU issues, political, social, human rights, environmental and other subjects. We can provide moderators for many types of events ranging from small and intimate seminars to large conferences involving VIP guests and audience participation.</p>
+      <p>Planet Podium was born with a mission to bring a standard of excellence to the world of conference and event moderating and to ensure better gender-balances on panels and debates.<br />
+      <a href="about.html" class="btn">More</a> </div>
+  </div>
+</div>
+
+<!-- What we do Section -->
+<div id="section_header">
+  <h2><span>What</span> we do</h2>
+</div>
+<div class="container">
+<p dir="ltr">Planet Podium provides professional moderators, facilitators and chairs for conferences, seminars and events in Europe and other international locations.  Our team is made up of accomplished television and radio broadcasters who can chair conferences on a range of topics from current affairs and business to EU issues, political, social, human rights, environmental and other subjects.</p>
+<p dir="ltr">We can provide moderators for many types of events ranging from small and intimate seminars to large conferences involving VIP guests and audience participation.</p>
+</div>
+<div id="main-services">
+  <div class="container">
+    <div class="row">
+		<div class="col-lg-3 centered"> 
+			<div id="content">
+				<div id="products">
+						<img src="images/Standard_Package2.png">
+					<div class="product-description" data-name="Standard Package" data-price="1000">
+						<h3 class="product-name">Standard Package</h3>
+							<p> We provide professional moderators at very competitive rates. Our charges depend on the type of event you are running, the number of hours/days you will require a moderator for, the location of the event, the work required of the moderator in the run-up to the event. This can include several consultations with the event management team, compilation of briefing notes, advice on speakers/panellists, conversations with participants, scripting etc.We will moderate conferences from just a few people, up to 300 people</p>
+							<!--<p class="product-price">&euro; 1000</p>-->
+       
+						<form class="add-to-cart" action="Shoping_Cart.html" method="get">
+							<div>
+								<label for="qty-1">Quantity</label>
+								<input type="text" name="qty-1" id="qty-1" class="qty" value="1" />
+							</div>
+							<p><input type="submit" value="Add to cart" class="btn" /></p>
+						</form>
+					</div>
+				</div>
+			</div>
+			
+				
+		</div>
+      <div class="col-lg-3 centered">
+	  <div id="content">
+				<div id="products">
+	  <img src="images/Silver_Package2.png">
+	  <div class="product-description" data-name="Silver Package" data-price="3000">
+        <h3>Silver Package</h3>
+        <p>We have much experience in dealing with audience Q&A sessions at conferences. Prior to the event we work closely with the conference management team to work out how much time will be allocated for any Q&A session with audiences. We discuss the logistics of each Q&A and how it will be managed and timed. We also have plenty of experience handling difficult audience members who risk monopolising a Q&A session.We will moderate conferences from just a few people, up to 1000 thousand people.</p>
+		<!--<p class="product-price">&euro; 1000</p>-->
+       
+						<form class="add-to-cart" action="Shoping_Cart.html" method="get">
+							<div>
+								<label for="qty-1">Quantity</label>
+								<input type="text" name="qty-1" id="qty-1" class="qty" value="1" />
+							</div>
+							<p><input type="submit" value="Add to cart" class="btn" /></p>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+     <div class="col-lg-3 centered">
+	 <div id="content">
+				<div id="products">
+	 <img src="images/Gold_Package2.png">
+	 <div class="product-description" data-name="Gold Package" data-price="7000">
+        <h3>Gold Package</h3>
+        <p> We consider our consultancy services as an integral part of our offerings. In fact we love sharing our experience and expertise with our clients when such help is needed and welcomed. Our mission is to ensure your event runs as smoothly as possible and so we will help you as much as possible to achieve that goal. We will moderate conferences from just a few people, up to 3000 thousand people.
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			</p>
+			<!--<p class="product-price">&euro; 1000</p>-->
+       
+						<form class="add-to-cart" action="Shoping_Cart.html" method="Get">
+							<div>
+								<label for="qty-1">Quantity</label>
+								<input type="text" name="qty-1" id="qty-1" class="qty" value="1" />
+							</div>
+							<p><input type="submit" value="Add to cart" class="btn" /></p>
+						</form>
+					</div>
+				</div>
+			</div>
+	</div>
+		 <div class="col-lg-3 centered">
+		  <div id="content">
+				<div id="products">
+		 <img src="images/Platinum_Package2.png">
+		  <div class="product-description" data-name="Platinum Package" data-price="10000">
+        <h3>Platinum Package</h3>
+        <p>They can moderate international industry events that deal with subjects such as insurance, medical, pharmaceutical, technology, health, banking and finance-related themes. Or we can provide moderators for events that focus on political, international or EU-related subjects.We will moderate conferences from just a few people, up to 5,000 thousand people.
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		</p>
+		<!--<p class="product-price">&euro; 1000</p>-->
+       
+						<form class="add-to-cart" action="Shoping_Cart.html" method="get">
+							<div>
+								<label for="qty-1">Quantity</label>
+								<input type="text" name="qty-1" id="qty-1" class="qty" value="1" />
+							</div>
+							<p><input type="submit" value="Add to cart" class="btn" /></p>
+						</form>
+					</div>
+				</div>
+			</div>
+         </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- Our clients Section -->
+<div id="section_header">
+  <h2><span>Our</span> clients</h2>
+</div>
+<div id="clients">
+  <div class="container">
+    <div class="row centered">
+      <div class="col-lg-8 col-lg-offset-2">
+        <p>References From Our Satisfied Clients</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-2"><a href="Testimonials.html"> <img class ="img-circle" src="images/President_Higgins_03.jpg" style="width 75px" height="75px" ></a><p>‘…thank you again for joining ....</P> </div>
+      <div class="col-lg-2"> <a href="Testimonials.html"> <img src="images/marschalltransparencyhu.jpg" class="img-circle" style="width 75px" height="75px"></a><p>I would like to write to you to thank you for your contribution ....</p> </div>
+      <div class="col-lg-2"><a href="Testimonials.html"> <img src="images/silvana-koch-mehrin-picture-4.jpg" class="img-circle" style="width 75px" height="75px"> </a><p>“Karen moderated a high level political seminar for us....</p></div>
+      <div class="col-lg-2"> <a href="Testimonials.html"><img src="images/Tom-Arnoldtestm01.jpg" class="img-circle" style="width 75px" height="75px"></a> <p>“All those who attended the launch of the Concern Writing Competition ....</p></div>
+      <div class="col-lg-2"> <a href="Testimonials.html"><img src="images/regions01-320.jpg" class="img-circle" style="width 75px" height="75px"></a> <p>“We had the pleasure to work with Karen Coleman during the edition of EuroPCom....</p></div>
+      <div class="col-lg-2"><a href="Testimonials.html"> <img src="images/COE-sml-brdr-01.png" class="img-circle" style="width 75px" height="75px"></a> <p>“Karen Coleman did an outstanding job of moderating....</p></div>
+    </div>
+  </div>
+</div>
+<div class="scroll-top-wrapper ">
+	<span class="scroll-top-inner">
+		<i class="fa fa-2x fa-arrow-circle-up"></i>
+	</span>
+</div>
+<!-- Footer -->
+<div id="footerwrap">
+  <div class="container">   
+    <div class="row">
+      <div class="col-md-12"> <ul >
+		<nav>
+			<ul class="pager">
+  
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About us</a></li>
+				<li class="active"><a href="services.html">Services</a></li>
+				<li><a href="contact.html">Contact us</a></li>
+				<li><a href="FAQ.html">FAQ</a></li>
+				<li><a href="FAQ.html">Cart</a></li>      
+			</ul>
+		</nav>
+      </div>
+     </div>     
+   </div>
+	<div class="row">
+     
+	   <ul class="list-inline social-buttons">
+          <li><a href="https://twitter.com/PlanetPodium"><i class="fa fa-twitter"></i></a> </li>
+          <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a> </li>
+          <li><a href="https://plus.google.com/+googleplus/posts"><i class="fa fa-google-plus"></i></a> </li>
+          <li><a href="http://ie.linkedin.com/pub/karen-coleman/17/8/870"><i class="fa fa-linkedin"></i></a> </li>
+        </ul>
+		 <div class="col-md-12"> <span class="copyright">Copyright &copy; 2015 Planet Podium. Design by Group Project Team</span> </div>
+  </div>
+</div>
+
+<!-- Bootstrap core JavaScript --> 
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</div>
+
+
+
+
+</body>
+</html>

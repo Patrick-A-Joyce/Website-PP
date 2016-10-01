@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Planet Podium | Shopping Cart</title>
+<link rel="shortcut icon" href="images/favicon.png"/>
+<!-- Bootstrap -->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css'/>
+<!-- Font Awesome  -->
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<!-- Web Font  -->
+<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+<!-- Custom CSS -->
+<!-- <link href="css/style1.css" rel="stylesheet" type="text/css" media="all"/>-->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="css/style1.css" rel="stylesheet" type="text/css" media="all"/>
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.shop.js"></script>
+</head>
+<body id="checkout-page">
+
+<div id="site">
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="index.html"><img width="185" height="60"  alt="Brand" src="PPLogo.png"></a> </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li class="services"><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+		<li><a href="Shoping_Cart.html">Shopping Cart<span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div id="section_header">
+  <div class="container">
+    <h2><span>Planet Podium </span> Checkout</h2>
+  </div>
+</div>
+
+	
+	<div id="content">
+		<h1>Checkout</h1>
+			<table id="checkout-cart" class="shopping-cart">
+			  <thead>
+				<tr>
+					<th scope="col">Item</th>
+					<th scope="col">Qty</th>
+					<th scope="col">Price</th>
+				</tr>
+			  </thead>
+			  <tbody>
+			  
+			  </tbody>
+			</table>
+		 <div id="pricing">
+			
+			<p id="shipping">
+				<strong>Shipping</strong>: <span id="sshipping"></span>
+			</p>
+			
+			<p id="sub-total">
+				<strong>Total</strong>: <span id="stotal"></span>
+			</p>
+		 </div>
+		 
+		 <form action="order.html" method="get" id="checkout-order-form">
+		 	<h2>Your Details</h2>
+		 	
+		 	<fieldset id="fieldset-billing">
+		 		<legend>Billing</legend>
+		 		<div>
+		 			<label for="name">Name</label>
+		 			<input type="text" name="name" id="name" data-type="string" data-message="This field cannot be empty" />
+		 		</div>
+		 		<div>
+		 			<label for="email">Email</label>
+		 			<input type="text" name="email" id="email" data-type="expression" data-message="Not a valid email address" />
+		 		</div>
+		 		<div>
+		 			<label for="city">City</label>
+		 			<input type="text" name="city" id="city" data-type="string" data-message="This field cannot be empty" />
+		 		</div>
+		 		<div>
+		 			<label for="address">Address</label>
+		 			<input type="text" name="address" id="address" data-type="string" data-message="This field cannot be empty" />
+		 		</div>
+		 		<div>
+		 			<label for="zip">ZIP Code</label>
+		 			<input type="text" name="zip" id="zip" data-type="string" data-message="This field cannot be empty" />
+		 		</div>
+		 		<div>
+		 			<label for="country">Country</label>
+		 			<select name="country" id="country" data-type="string" data-message="This field cannot be empty">
+		 				<option value="">Select</option>
+						<option value'IE">Ireland</option>
+		 				<option value="US">USA</option>
+		 				<option value="IT">Italy</option>
+		 			</select>
+		 		</div>
+		 	</fieldset>
+		 	
+		 	<div id="shipping-same">Same as Billing <input type="checkbox" id="same-as-billing" value=""/></div>
+		 	
+		 	<fieldset id="fieldset-shipping">
+		 		
+		 		<legend>Shipping</legend>
+		 		
+		 		<div>
+		 			<label for="sname">Name</label>
+		 			<input type="text" name="sname" id="sname" data-type="string" data-message="This field cannot be empty" />
+		 		</div>
+		 		<div>
+		 			<label for="semail">Email</label>
+		 			<input type="text" name="semail" id="semail" data-type="expression" data-message="Not a valid email address" />
+		 		</div>
+		 		<div>
+		 			<label for="scity">City</label>
+		 			<input type="text" name="scity" id="scity" data-type="string" data-message="This field cannot be empty" />
+		 		</div>
+		 		<div>
+		 			<label for="saddress">Address</label>
+		 			<input type="text" name="saddress" id="saddress" data-type="string" data-message="This field cannot be empty" />
+		 		</div>
+		 		<div>
+		 			<label for="szip">ZIP Code</label>
+		 			<input type="text" name="szip" id="szip" data-type="string" data-message="This field cannot be empty" />
+		 		</div>
+		 		<div>
+		 			<label for="scountry">Country</label>
+		 			<select name="scountry" id="scountry" data-type="string" data-message="This field cannot be empty">
+		 				<option value="">Select</option>
+		 				<option value="US">USA</option>
+		 				<option value="IT">Italy</option>
+		 			</select>
+		 		</div>
+		 	</fieldset>
+		 	
+		 	<p><input type="submit" id="submit-order" value="Submit" class="btn" /></p>
+		 
+		 </form>
+	</div>
+	
+	
+
+</div>
+
+<!-- Footer -->
+<div id="footerwrap">
+  <div class="container">   
+    <div class="row">
+      <div class="col-md-12"> <ul >
+		<nav>
+			<ul class="pager">
+  
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About us</a></li>
+				<li class="active"><a href="services.html">Services</a></li>
+				<li><a href="contact.html">Contact us</a></li>
+				<li><a href="FAQ.html">FAQ</a></li>
+				<li><a href="Shoping_Cart.html">Cart</a></li>      
+			</ul>
+		</nav>
+      </div>
+     </div>     
+   </div>
+	<div class="row">
+     
+	   <ul class="list-inline social-buttons">
+          <li><a href="https://twitter.com/PlanetPodium"><i class="fa fa-twitter"></i></a> </li>
+          <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a> </li>
+          <li><a href="https://plus.google.com/+googleplus/posts"><i class="fa fa-google-plus"></i></a> </li>
+          <li><a href="http://ie.linkedin.com/pub/karen-coleman/17/8/870"><i class="fa fa-linkedin"></i></a> </li>
+        </ul>
+		 <div class="col-md-12"> <span class="copyright">Copyright &copy; 2015 Planet Podium. Design by Group Project Team</span> </div>
+  </div>
+</div>
+
+<!-- Bootstrap core JavaScript --> 
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</div>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Planet Podium | FAQ</title>
+<link rel="shortcut icon" href="images/favicon.png"/>
+<!-- Bootstrap -->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css'/>
+<!-- Font Awesome  -->
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<!-- Web Font  -->
+<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+<!-- Custom CSS -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+		<link rel="stylesheet" href="css/style2.css">
+<script src="js/jquery.min.js"></script>
+<script>
+// Accordian
+var action="click";
+var speed="500";
+
+$(document).ready(function(){
+	// Question handler
+	$('li.q').on(action ,function(){
+		// Get next element
+		$(this).next()
+			.slideToggle(speed)
+				// Select all other answers
+				.siblings('li.a')
+					.slideUp();
+		// Get image for active question
+		var img = $(this).children('img');
+		// Remove the 'rotate' class for all images except the active
+		$('img').not(img).removeClass('rotate');
+		// Toggle rotate class
+		img.toggleClass('rotate');
+	});
+});
+</script>
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="index.html"><img width="165" height="50"  alt="Brand" src="PPLogo.png"></a> </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li class="active"><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+		<li><a href="Shoping_Cart.html">Shopping Cart<span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div id="section_header">
+  <div class="container">
+    <h2><span>Planet Podium FAQ</span></h2>
+  </div>
+</div>
+<div id="services">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 service">
+      
+       
+			<div class="title"><h3>Click On Arrows For More Information </h3></div>
+			<ul class="faq">
+				<li class="q"><img src="images/arrow.png"> &nbsp; What size of events/conferences do you provide moderators for?</li>
+				<li class="a"><p>We can provide moderators for a wide range and size of events in European locations and beyond. These can be small low-profile seminars that have a modest number of attendees to large international conferences that can run for several days involving VIPs such as Prime Ministers and Presidents.</p><br/><audio controls><source src="QA 1.mp3" type="audio/mpeg"></audio></li>
+				
+				<li class="q"><img src="images/arrow.png">&nbsp;  What kind of conference subjects can your moderators deal with?</li>
+				<li class="a"><p>Our moderators are adept at covering a wide range of conference topics. They can moderate international industry events that deal with subjects such as insurance, medical, pharmaceutical, technology, health, banking and finance-related themes. Or we can provide moderators for events that focus on political, international or EU-related subjects.</p><br/><audio controls><source src="QA 2.mp3" type="audio/mpeg"></audio></li>
+				
+				<li class="q"><img src="images/arrow.png"> &nbsp; Can you give us advice and help on how an event should be moderated and how many panellists we might need or what kind of speakers we should include in our event?</li>
+				<li class="a"><p>Yes of course we can. We consider our consultancy services as an integral part of our offerings. In fact we love sharing our experience and expertise with our clients when such help is needed and welcomed. Our mission is to ensure your event runs as smoothly as possible and so we will help you as much as possible to achieve that goal.</p><br/><audio controls><source src="QA 3.mp3" type="audio/mpeg"></audio></li>
+				
+				<li class="q"><img src="images/arrow.png">&nbsp;  Can you provide women moderators to balance male-dominated panels?</li>
+				<li class="a"><p>Absolutely. We have excellent female moderators on our team who are adept at handling a wide range of subjects from business and environmental to cultural and political to themes connected with the European Union. All of our women moderators have considerable experience in broadcast journalism and in chairing a wide range of events across the globe.</p><br/><audio controls><source src="QA 4.mp3" type="audio/mpeg"></audio></li>
+				
+				<li class="q"><img src="images/arrow.png"> &nbsp; Will your moderators travel for an event?</li>
+				<li class="a"><p>Yes they will! They are well used to travelling for conferences and events. All we ask is that you pay all relevant travel, accommodation and other related expenses.</p><br/><audio controls><source src="QA 5.mp3" type="audio/mpeg"></audio></li>
+				
+				<li class="q"><img src="images/arrow.png">&nbsp;  What language do your moderators work with?</li>
+				<li class="a"><p>All of our moderators are native English-speakers. However, if you require a multi-lingual moderator or someone who speaks a specific language then we will endeavour to source that professional for you.</p><br/><audio controls><source src="QA 6.mp3" type="audio/mpeg"></audio></li>
+				<li class="q"><img src="images/arrow.png"> What size of events/conferences do you provide moderators for?</li>
+				<li class="a"><p>We can provide moderators for a wide range and size of events in European locations and beyond. These can be small low-profile seminars that have a modest number of attendees to large international conferences that can run for several days involving VIPs such as Prime Ministers and Presidents.</p><br/><audio controls><source src="QA 7.mp3" type="audio/mpeg"></audio></li>
+				
+				<li class="q"><img src="images/arrow.png">&nbsp; Are your moderators well-known television and media personalities who may be difficult to deal with?</li>
+				<li class="a"><p>Absolutely not! There are no Prima Donnas on Planet Podium. If you want a famous moderator, whose celebrity status is of paramount importance to your event, then we may not be able to provide that celebrity for you. While our moderators are well known within their own broadcasting media fields, their individual fame is of less importance than their primary objective which is to chair your event as professionally as possible. Our moderators are very easy to work with and are the kind of people who will cooperate with you from start to finish to ensure your event is seamlessly chaired.</p><br/><audio controls><source src="QA 8.mp3" type="audio/mpeg"></audio></li>
+				
+				<li class="q"><img src="images/arrow.png"> &nbsp;Do your moderators cost a fortune?</li>
+				<li class="a"><p>No. We provide professional moderators at very competitive rates. Our charges depend on the type of event you are running, the number of hours/days you will require a moderator for, the location of the event, the work required of the moderator in the run-up to the event. This can include several consultations with the event management team, compilation of briefing notes, advice on speakers/panellists, conversations with participants, scripting etc.</p><br/><audio controls><source src="QA 9.mp3" type="audio/mpeg"></audio></li>
+				
+				<li class="q"><img src="images/arrow.png">&nbsp; Can your moderators manage high maintenance/high-profile conference guests?</li>
+				<li class="a"><p>Yes they certainly can. Our moderators have many years of experience interviewing and dealing with all sorts of people. They can confidently cope with a VIP guest such as a Prime Minister or President or manage a difficult panellist who may require firm but diplomatic handling.</p><br/><audio controls><source src="QA 10.mp3" type="audio/mpeg"></audio></li>
+				
+				<li class="q"><img src="images/arrow.png"> &nbsp;Can your moderators manage audiences, large or small in number, who want to interact with speakers and panellists?</li>
+				<li class="a"><p>Yes they certainly can. We have much experience in dealing with audience Q&amp;A sessions at conferences. Prior to the event we work closely with the conference management team to work out how much time will be allocated for any Q&amp;A session with audiences. We discuss the logistics of each Q&amp;A and how it will be managed and timed. We also have plenty of experience handling difficult audience members who risk monopolising a Q&amp;A session.</p><br/><audio controls><source src="QA 11.mp3" type="audio/mpeg"></audio></li>
+				
+				<li class="q"><img src="images/arrow.png"> &nbsp;What size of conference will you moderate?</li>
+				<li class="a"><p>We will happily moderate conferences from just a few people, up to thousands of people.</p><br/><audio controls><source src="QA 12.mp3" type="audio/mpeg"></audio></li>
+			</ul>
+
+        
+     
+        </div>
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+<div id="footerwrap">
+  <div class="container">   
+    <div class="row">
+      <div class="col-md-12"> <ul >
+		<nav>
+			<ul class="pager">
+  
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About us</a></li>
+				<li class="active"><a href="services.html">Services</a></li>
+				<li><a href="contact.html">Contact us</a></li>
+				<li><a href="FAQ.html">FAQ</a></li>
+				<li><a href="Shoping_Cart.html">Cart</a></li>      
+			</ul>
+		</nav>
+      </div>
+     </div>     
+   </div>
+	<div class="row">
+     
+	   <ul class="list-inline social-buttons">
+          <li><a href="https://twitter.com/PlanetPodium"><i class="fa fa-twitter"></i></a> </li>
+          <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a> </li>
+          <li><a href="https://plus.google.com/+googleplus/posts"><i class="fa fa-google-plus"></i></a> </li>
+          <li><a href="http://ie.linkedin.com/pub/karen-coleman/17/8/870"><i class="fa fa-linkedin"></i></a> </li>
+        </ul>
+		 <div class="col-md-12"> <span class="copyright">Copyright &copy; 2015 Planet Podium. Design by Group Project Team</span> </div>
+  </div>
+</div>
+
+<!-- Bootstrap core JavaScript --> 
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</div>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<style>
+      #map-canvas {
+        width: 500px;
+        height: 400px;
+      }
+    </style>
+	<script>
+  function initialize() {
+  var mapCanvas = document.getElementById('map-canvas');
+    var mapOptions = {
+      center: new google.maps.LatLng(53.278670899999990000, -9.010463599999980000),
+      zoom: 16,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    }
+    var map = new google.maps.Map(mapCanvas, mapOptions);
+  
+}
+ 
+
+   google.maps.event.addDomListener(window, 'load', initialize);
+</script>innovation
+#f6f6f6 color on the head sections
